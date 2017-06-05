@@ -54,7 +54,7 @@ if __name__ == '__main__':
     parser = OptionParser()
     parser.add_option("--host", dest="host", default="localhost",
                       help="hostname or ip address", metavar="host")
-    parser.add_option("--port", dest="port", default=8080,
+    parser.add_option("--port", dest="port", default=3000,
                       help="port number", metavar="port")
     (options, args) = parser.parse_args()
     run(app, host=options.host, port=int(options.port))
